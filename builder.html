@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Popcorn Custom Builder</title>
+  </head>
+  <body>
+    <form action="builder.py" method="post">
+      <h1>Popcorn Custom Builder</h1>
+      <h2>Core</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="popcorn.js" name="parts[]"
+            value="popcorn.js" checked="checked" />
+          <label for="popcorn.js">popcorn.js</label>
+        </li>
+      </ul>
+
+      <h2>Plugins</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="plugin-attribution" name="parts[]"
+            value="plugins/attribution" />
+          <label for="plugin-attribution">Attribution</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-code" name="parts[]"
+            value="plugins/code" />
+          <label for="plugin-code">Code</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-flickr" name="parts[]"
+            value="plugins/flickr" />
+          <label for="plugin-flickr">Flickr</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-footnote" name="parts[]"
+            value="plugins/footnote" />
+          <label for="plugin-footnote">Footnote</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-googlefeed" name="parts[]"
+            value="plugins/googlefeed" />
+          <label for="plugin-googlefeed">Google Feed</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-googlemap" name="parts[]"
+            value="plugins/googlemap" />
+          <label for="plugin-googlemap">Google Map</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-googlenews" name="parts[]"
+            value="plugins/googlenews" />
+          <label for="plugin-googlenews">Google News</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-image" name="parts[]"
+            value="plugins/image" />
+          <label for="plugin-image">Image</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-lastfm" name="parts[]"
+            value="plugins/lastfm" />
+          <label for="plugin-lastfm">Last FM</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-lowerthird" name="parts[]"
+            value="plugins/lowerthird" />
+          <label for="plugin-lowerthird">Lower Third</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-mustache" name="parts[]"
+            value="plugins/mustache" />
+          <label for="plugin-mustache">Mustache</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-openmap" name="parts[]"
+            value="plugins/openmap" />
+          <label for="plugin-openmap">Open Map</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-subtitle" name="parts[]"
+            value="plugins/subtitle" />
+          <label for="plugin-subtitle">Subtitle</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-tagthisperson" name="parts[]"
+            value="plugins/tagthisperson" />
+          <label for="plugin-tagthisperson">Tag This Person</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-twitter" name="parts[]"
+            value="plugins/twitter" />
+          <label for="plugin-twitter">Twitter</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-webpage" name="parts[]"
+            value="plugins/webpage" />
+          <label for="plugin-webpage">Web Pages</label>
+        </li>
+        <li>
+          <input type="checkbox" id="plugin-wikipedia" name="parts[]"
+            value="plugins/wikipedia" />
+          <label for="plugin-wikipedia">Wikipedia</label>
+        </li>
+      </ul>
+
+      <h2>Parsers</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="parser-json" name="parts[]"
+            value="parsers/parserJSON" />
+          <label for="parser-json">JSON</label>
+        </li>
+        <li>
+          <input type="checkbox" id="parser-sbv" name="parts[]"
+            value="parsers/parserSBV" />
+          <label for="parser-sbv">SBV</label>
+        </li>
+        <li>
+          <input type="checkbox" id="parser-srt" name="parts[]"
+            value="parsers/parserSRT" />
+          <label for="parser-srt">SRT</label>
+        </li>
+        <li>
+          <input type="checkbox" id="parser-ssa" name="parts[]"
+            value="parsers/parserSSA" />
+          <label for="parser-ssa">SSA</label>
+        </li>
+        <li>
+          <input type="checkbox" id="parser-ttml" name="parts[]"
+            value="parsers/parserTTML" />
+          <label for="parser-ttml">TTML</label>
+        </li>
+        <li>
+          <input type="checkbox" id="parser-ttxt" name="parts[]"
+            value="parsers/parserTTXT" />
+          <label for="parser-ttxt">TTXT</label>
+        </li>
+        <li>
+          <input type="checkbox" id="parser-vtt" name="parts[]"
+            value="parsers/parserVTT" />
+          <label for="parser-vtt">VTT</label>
+        </li>
+        <li>
+          <input type="checkbox" id="parser-xml" name="parts[]"
+            value="parsers/parserXML" />
+          <label for="parser-xml">XML</label>
+        </li>
+      </ul>
+
+      <h2>Players</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="player-vimeo" name="parts[]"
+            value="players/vimeo" />
+          <label for="player-vimeo">Vimeo</label>
+        </li>
+        <li>
+          <input type="checkbox" id="player-youtube" name="parts[]"
+            value="players/youtube" />
+          <label for="player-youtube">YouTube</label>
+        </li>
+      </ul>
+
+      <h2>Option</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="minify" name="minify" value="1" />
+          <label for="minify">Minify with Google Closure Compiler</label>
+        </li>
+      </ul>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
